@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gatos de Rua Café · Rua 242, Setor Leste Universitário</title>
+<meta name="description" content="Café especial que começou numa barraquinha de rua em Goiânia. Cafés quentes e gelados e a empada da família.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Dela+Gothic+One&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--yel:#edbe2c;--ink:#161412;--kraft:#d9c7a3;--news:#f3ecdc;--wood:#7a4e2d;--board:#23292a;--chalk:#efeee6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--yel);color:var(--ink);font-family:"Courier Prime",monospace;font-size:17px;line-height:1.55;overflow-x:hidden}
+a{color:inherit}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.22;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .3  0 0 0 0 .25  0 0 0 0 .15  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.hand{font-family:Kalam,cursive}
+.heavy{font-family:"Dela Gothic One",sans-serif;font-weight:400;line-height:.95}
+.tape{position:absolute;width:110px;height:30px;background:rgba(243,236,220,.75);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+
+/* topo */
+.bar{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;position:relative;z-index:3}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .heavy{font-size:22px}
+.logo .hand{font-size:22px;margin-left:-2px;transform:translateY(4px);display:inline-block}
+.bar .wa{font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink)}
+
+/* abertura */
+.open{position:relative;padding:24px 32px 160px;min-height:620px}
+.open h1{font-family:Kalam,cursive;font-weight:700;font-size:clamp(52px,6.6vw,104px);line-height:.95;max-width:48vw;position:relative;z-index:2}
+.open h1 u{text-decoration:none;background:linear-gradient(transparent 62%,rgba(22,20,18,.14) 62%)}
+.open .lede{position:relative;z-index:2;max-width:430px;margin-top:28px;font-size:18px}
+.photo{position:absolute;right:4vw;top:40px;width:min(42vw,600px);background:var(--news);padding:14px 14px 56px;transform:rotate(2.6deg);box-shadow:0 18px 40px rgba(60,40,0,.28);z-index:1;transition:transform .3s ease-out}
+.photo:hover{transform:rotate(1deg) translateY(-4px)}
+.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo figcaption{position:absolute;right:20px;bottom:14px;font-family:Kalam,cursive;font-size:20px}
+.photo .tape{top:-14px;left:40%;transform:rotate(-4deg)}
+.stamp{position:absolute;left:-70px;bottom:-60px;width:150px;height:150px;z-index:3;color:#b23a1f;transform:rotate(-12deg)}
+.stamp svg{width:100%;height:100%;animation:spin 40s linear infinite}
+.stamp .mid{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-family:"Dela Gothic One";font-size:15px;line-height:1.05}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* historia */
+.story{background:var(--news);position:relative;padding:120px 32px 140px;clip-path:polygon(0 2%,6% 0,14% 1.6%,25% .4%,38% 1.8%,52% 0,66% 1.4%,80% .2%,92% 1.6%,100% .6%,100% 100%,0 100%)}
+.story h2{font-size:clamp(44px,6vw,88px);max-width:12ch}
+.steps{position:relative;margin-top:72px;display:grid;grid-template-columns:repeat(12,1fr);row-gap:56px}
+.clip{position:relative;align-self:start;background:#fff;padding:28px 28px 32px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.clip .when{font-family:"Dela Gothic One";font-size:28px}
+.clip p{margin-top:10px}
+.clip .src{display:block;margin-top:14px;font-size:13px;opacity:.6}
+.clip .tape{top:-15px;left:24px;transform:rotate(-6deg)}
+.c1{grid-column:1/6;transform:rotate(-1.5deg)}
+.c2{grid-column:7/12;transform:rotate(1.2deg);margin-top:80px;background:var(--kraft)}
+.c3{grid-column:3/9;transform:rotate(-.6deg)}
+.c3 blockquote{font-family:Kalam,cursive;font-size:clamp(26px,2.6vw,36px);line-height:1.2}
+.cup{grid-column:9/13;justify-self:end;width:min(320px,100%);background:#fff;padding:12px 12px 44px;transform:rotate(4deg);box-shadow:0 14px 30px rgba(0,0,0,.18);align-self:start;position:relative}
+.cup img{width:100%;display:block;aspect-ratio:1;object-fit:cover}
+.cup span{position:absolute;bottom:10px;left:14px;font-family:Kalam,cursive;font-size:18px}
+
+/* lousa */
+.board{position:relative;background:var(--board);color:var(--chalk);margin:0 32px;padding:88px 7vw 96px;border:14px solid var(--wood);box-shadow:inset 0 0 120px rgba(0,0,0,.45);transform:translateY(-60px)}
+.board:before{content:"";position:absolute;inset:0;opacity:.18;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.02 .3' numOctaves='2'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>");pointer-events:none}
+.board h2{font-family:Kalam,cursive;font-weight:700;font-size:clamp(48px,6vw,84px);line-height:1}
+.board .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px 8vw;margin-top:48px;font-family:Kalam,cursive;font-size:24px}
+.board h3{font-family:Kalam,cursive;font-weight:700;font-size:34px;border-bottom:2px dashed rgba(239,238,230,.4);padding-bottom:6px;margin-bottom:12px}
+.board li{list-style:none;display:flex;justify-content:space-between;gap:16px;padding:4px 0}
+.board li em{font-style:normal;opacity:.6}
+.board .foot{margin-top:40px;font-family:"Courier Prime";font-size:14px;opacity:.6}
+.peek{position:absolute;top:-62px;right:9%;width:96px;transition:transform .35s ease-out}
+.board:hover .peek{transform:translateY(-10px)}
+
+/* chegar */
+.visit{display:grid;grid-template-columns:5fr 7fr;gap:48px;padding:40px 32px 120px;align-items:start}
+.visit h2{font-family:Kalam,cursive;font-weight:700;font-size:clamp(52px,6vw,92px);line-height:.95}
+.visit table{margin-top:28px;border-collapse:collapse;width:100%}
+.visit td{padding:10px 0;border-bottom:1px dashed rgba(22,20,18,.35)}
+.visit td:last-child{text-align:right}
+.note{position:relative;display:block;margin-top:40px;background:var(--news);padding:26px 26px 24px;transform:rotate(-1.4deg);text-decoration:none;box-shadow:0 10px 24px rgba(60,40,0,.2);transition:transform .2s ease-out}
+.note:hover{transform:rotate(0) translateY(-3px)}
+.note .tape{top:-14px;right:30px;transform:rotate(5deg)}
+.note b{display:block;font-family:Kalam,cursive;font-size:30px;line-height:1.1}
+.mapbox{position:relative;background:var(--news);padding:12px;transform:rotate(.8deg);box-shadow:0 14px 32px rgba(60,40,0,.25)}
+.mapbox iframe{display:block;width:100%;height:440px;border:0;filter:sepia(.25) saturate(.9)}
+.mapbox .tape{top:-14px;left:46%}
+footer{background:var(--ink);color:var(--yel);padding:40px 32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a{color:var(--yel)}
+.demo{position:fixed;z-index:60;left:12px;bottom:12px;background:var(--news);color:var(--ink);padding:4px 10px;font-size:12px;border:1px solid var(--ink)}
+
+@media(max-width:860px){
+ .open h1{max-width:none}
+ .bar{padding:16px 20px}.bar .wa{display:none}
+ .open{padding:8px 20px 64px;min-height:auto}
+ .photo{position:relative;right:auto;top:auto;width:92%;margin:40px 0 0 4%}
+ .stamp{left:auto;right:-6px;bottom:-56px;width:112px;height:112px}
+ .story{padding:96px 20px 120px}
+ .steps{display:block}.clip,.cup{margin:48px 0 0!important}
+ .cup{width:78%;margin-left:auto!important}
+ .board{margin:0 12px;padding:64px 22px 64px;border-width:10px}
+ .board .cols{grid-template-columns:1fr;gap:36px;font-size:21px}
+ .peek{width:72px;top:-48px}
+ .visit{grid-template-columns:1fr;padding:20px 20px 96px}
+ .mapbox iframe{height:320px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="logo" href="#"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 30c0-9 5-16 11-19l3 7h8l3-7c6 3 11 10 11 19 0 13-9 22-18 22S14 43 14 30z" fill="#161412"/><path d="M50 44c6 0 9 5 6 10-2 3-7 3-9 1" stroke="#161412" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="26" cy="31" r="2.4" fill="#edbe2c"/><circle cx="38" cy="31" r="2.4" fill="#edbe2c"/></svg><span class="heavy">Gatos de Rua</span><span class="hand">café</span></a>
+  <a class="wa" href="https://wa.me/5562993297920?text=Oi!%20Vim%20pelo%20site%20do%20Gatos%20de%20Rua.">Chamar no WhatsApp</a>
+</header>
+
+<main>
+<section class="open">
+  <h1>Começou numa barraquinha de rua. O café continua aqui.</h1>
+  <p class="lede">Café especial e a empada da família, servidos rápido num quiosque amarelo na Rua 242, Setor Leste Universitário.</p>
+  <figure class="photo"><span class="tape"></span><img src="img/quiosque.jpg" alt="Quiosque amarelo do Gatos de Rua Café com mesas pretas na calçada, debaixo das árvores"><figcaption>Rua 242, 584</figcaption>
+   <div class="stamp" aria-live="polite">
+     <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="r" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="2"/><text font-family="Courier Prime" font-size="17" font-weight="700" fill="currentColor" letter-spacing="3"><textPath href="#r">gatos de rua café · goiânia · gatos de rua café · goiânia ·</textPath></text></svg>
+     <div class="mid" id="stamp">seg a sex<br>8h30–18h30</div>
+   </div></figure>
+</section>
+
+<section class="story">
+  <h2 class="heavy">Da calçada para o quiosque</h2>
+  <div class="steps">
+    <div class="clip c1"><span class="tape"></span><div class="when">Na barraquinha</div><p>A família vendia empada e café numa pequena barraca nas ruas de Goiânia.</p><span class="src">Fonte: Estadão, 14/06/2024</span></div>
+    <div class="clip c2"><span class="tape"></span><div class="when">Outubro de 2018</div><p>A Luana volta de um curso de barista em São Paulo e propõe o negócio. A família topa e começa do jeito que dá.</p><span class="src">Fonte: Estadão, 14/06/2024</span></div>
+    <figure class="cup"><img src="img/espresso.jpg" alt="Espresso caindo numa xícara branca com o logo do Gatos de Rua"><span>a xícara da casa</span></figure>
+    <div class="clip c3"><span class="tape"></span><blockquote>“Quisemos nos associar à ideia do gato, que, mesmo quando está em situação de rua, mantém a elegância.”</blockquote><span class="src">Igor Vasconcelos, sócio, ao Estadão</span></div>
+  </div>
+</section>
+
+<section class="board" id="cardapio">
+  <svg class="peek" viewBox="0 0 120 80" aria-hidden="true"><path d="M10 80V44C10 24 22 10 34 4l8 16h36l8-16c12 6 24 20 24 40v36z" fill="#161412"/><circle cx="44" cy="52" r="6" fill="#edbe2c"/><circle cx="76" cy="52" r="6" fill="#edbe2c"/><circle cx="44" cy="52" r="2.4" fill="#161412"/><circle cx="76" cy="52" r="2.4" fill="#161412"/></svg>
+  <h2>Na lousa</h2>
+  <div class="cols">
+    <div><h3>Quentes</h3><ul><li>Espresso <em>[preço]</em></li><li>Prensa francesa <em>[preço]</em></li><li>Hario V60 <em>[preço]</em></li><li>[mais sabores da casa] <em></em></li></ul></div>
+    <div><h3>Gelados</h3><ul><li>Pra cada quente, um gelado <em>[preço]</em></li><li>[sabores gelados] <em></em></li></ul></div>
+    <div><h3>Da cozinha</h3><ul><li>Empada caseira, receita da mãe <em>[preço]</em></li><li>[outras comidas artesanais] <em></em></li></ul></div>
+    <div><h3>Só grão especial</h3><p>Cerca de 60 combinações, metade quente e metade gelada, segundo o Estadão em 2024.</p></div>
+  </div>
+  <p class="foot">Cardápio completo: <a href="https://abre.ai/cafegatosderua">abre.ai/cafegatosderua</a></p>
+</section>
+
+<section class="visit">
+  <div>
+    <h2>Chega aí</h2>
+    <p>Rua 242, 584, Setor Leste Universitário, Goiânia - GO, 74603-190</p>
+    <table>
+      <tr><td>Segunda a sexta</td><td>8h30 às 18h30</td></tr>
+      <tr><td>Sábado</td><td>9h às 12h</td></tr>
+      <tr><td>Domingo</td><td>fechado</td></tr>
+    </table>
+    <a class="note" href="https://wa.me/5562993297920?text=Oi!%20Vim%20pelo%20site%20do%20Gatos%20de%20Rua."><span class="tape"></span><b>Chama no WhatsApp</b>(62) 99329-7920</a>
+  </div>
+  <div class="mapbox"><span class="tape"></span><iframe title="Mapa do Gatos de Rua Café" src="https://www.google.com/maps?q=Gatos+de+Rua+Caf%C3%A9,+R.+242,+584,+Setor+Leste+Universit%C3%A1rio,+Goi%C3%A2nia&hl=pt-BR&output=embed"></iframe></div>
+</section>
+</main>
+
+<footer><span>Gatos de Rua Café, Goiânia</span><span><a href="https://www.instagram.com/gatosderuacafe/">@gatosderuacafe</a></span></footer>
+<div class="demo">Demonstração, não é o site oficial</div>
+<script>
+(function(){var d=new Date(),w=d.getDay(),h=d.getHours()+d.getMinutes()/60,o=(w>=1&&w<=5&&h>=8.5&&h<18.5)||(w===6&&h>=9&&h<12);
+document.getElementById('stamp').innerHTML=o?'aberto<br>agora':'fechado<br>agora';})();
+</script>
+</body>
+</html>

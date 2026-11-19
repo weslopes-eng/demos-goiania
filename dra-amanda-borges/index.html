@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dra. Amanda Borges · Urgência odontológica no Setor Marista</title>
+<meta name="description" content="Atendimento de urgência odontológica na Av. 85, Setor Marista, Goiânia. Ligue ou chame no WhatsApp: (62) 99175-0662.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--stone:#efece6;--ink:#1d2224;--concrete:#8a8d88;--signal:#d4532b;--sage:#c9d1c4;--line:#d8d4cb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--stone);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.g{font-family:"Bricolage Grotesque",sans-serif}
+.shell{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+aside{position:sticky;top:0;height:100vh;padding:32px 28px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+aside .who b{display:block;font-family:"Bricolage Grotesque";font-weight:500;font-size:22px;line-height:1.15}
+aside .who span{display:block;color:var(--concrete);font-size:15px;margin-top:6px}
+aside nav{display:flex;flex-direction:column;gap:10px;font-size:15px}
+aside nav a{color:var(--concrete);transition:color .15s ease-out}
+aside nav a:hover{color:var(--ink)}
+aside .mini{font-size:15px}
+aside .mini a{display:block;font-family:"Bricolage Grotesque";font-weight:500;font-size:20px;color:var(--signal)}
+.cro{display:inline-block;margin-top:10px;border:1px dashed var(--concrete);padding:2px 8px;font-size:13px;color:var(--concrete)}
+
+/* abertura */
+.first{min-height:100vh;display:grid;grid-template-columns:repeat(12,1fr);align-content:center;padding:64px 56px;position:relative}
+.ask{grid-column:1/5;font-size:20px;color:var(--concrete);margin-bottom:28px}
+.ask strong{display:block;color:var(--ink);font-family:"Bricolage Grotesque";font-weight:500;font-size:clamp(28px,2.6vw,38px);line-height:1.15}
+.num{grid-column:1/13;display:block;font-family:"Bricolage Grotesque";font-weight:300;font-size:clamp(76px,15.5vw,250px);line-height:.9;letter-spacing:-.045em;color:var(--ink);transition:color .2s ease-out}
+.num .dd{color:var(--signal)}
+.num br.m{display:none}
+.num:hover{color:var(--signal)}
+.breath{grid-column:1/9;height:2px;background:var(--line);margin-top:36px;position:relative;overflow:hidden}
+.breath:after{content:"";position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--ink);transform-origin:left;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scaleX(.08)}50%{transform:scaleX(1)}}
+.how{grid-column:9/13;align-self:start;margin-top:28px;font-size:15px;color:var(--concrete)}
+.chips{grid-column:1/13;display:flex;gap:28px;margin-top:40px;flex-wrap:wrap}
+.chips a{font-family:"Bricolage Grotesque";font-weight:500;font-size:20px;border-bottom:2px solid var(--ink);padding-bottom:2px;transition:border-color .15s ease-out,color .15s ease-out}
+.chips a:hover{color:var(--signal);border-color:var(--signal)}
+
+/* sequência */
+.seq{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:120px 56px;border-top:1px solid var(--line)}
+.seq h2{grid-column:1/5;font-family:"Bricolage Grotesque";font-weight:500;font-size:clamp(34px,3.4vw,52px);line-height:1.05;letter-spacing:-.02em}
+.seq ol{grid-column:6/13;list-style:none;counter-reset:n}
+.seq li{counter-increment:n;display:grid;grid-template-columns:72px 1fr;padding:28px 0;border-bottom:1px solid var(--line);font-size:22px;line-height:1.4}
+.seq li:before{content:counter(n);font-family:"Bricolage Grotesque";font-weight:300;font-size:44px;line-height:1;color:var(--concrete)}
+
+/* tratamentos */
+.idx{background:var(--sage);padding:120px 56px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.idx h2{grid-column:2/8;font-family:"Bricolage Grotesque";font-weight:500;font-size:clamp(34px,3.4vw,52px);letter-spacing:-.02em;line-height:1.05}
+.idx ul{grid-column:2/11;list-style:none;margin-top:40px}
+.idx li{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:20px 0;border-top:1px solid rgba(29,34,36,.2);font-family:"Bricolage Grotesque";font-size:clamp(26px,2.6vw,40px);font-weight:300;letter-spacing:-.01em}
+.idx li span{font-family:"Hanken Grotesk";font-size:15px;color:#555c58;text-align:right;max-width:280px}
+.idx li.ph{color:#6c736e}
+.idx .legal{grid-column:2/11;margin-top:28px;font-size:14px;color:#555c58}
+
+/* endereço */
+.where{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:120px 56px 96px}
+.where .addr{grid-column:1/7;font-family:"Bricolage Grotesque";font-weight:300;font-size:clamp(34px,3.6vw,56px);line-height:1.08;letter-spacing:-.02em}
+.where .addr small{display:block;font-family:"Hanken Grotesk";font-size:16px;color:var(--concrete);margin-top:20px;letter-spacing:0}
+.where .mapw{grid-column:7/13;border-radius:0 0 0 160px;overflow:hidden;height:460px}
+.where iframe{width:100%;height:100%;border:0;filter:grayscale(.85) contrast(.95)}
+.where .links{display:flex;gap:28px;margin-top:40px;font-family:"Hanken Grotesk";font-size:17px;letter-spacing:0}
+.where .links a{border-bottom:1px solid var(--ink)}
+footer{padding:32px 56px;border-top:1px solid var(--line);font-size:14px;color:var(--concrete);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.demo{position:fixed;right:14px;top:14px;z-index:20;background:var(--stone);border:1px solid var(--line);color:var(--concrete);font-size:12px;padding:4px 10px}
+.mbar{display:none}
+
+@media(max-width:900px){
+ .shell{display:block}
+ aside{position:static;height:auto;border:0;padding:20px 20px 0;flex-direction:row;align-items:start}
+ aside nav,aside .mini{display:none}
+ .first{min-height:auto;padding:48px 20px 72px;display:block}
+ .num{font-size:26vw;line-height:.88;margin-top:12px}
+ .num br.m{display:inline}
+ .how{margin-top:24px}
+ .seq,.idx,.where{display:block;padding:80px 20px}
+ .seq ol,.idx ul{margin-top:32px}
+ .seq li{grid-template-columns:52px 1fr;font-size:19px}
+ .idx li{display:block}.idx li span{display:block;text-align:left;margin-top:4px}
+ .where .mapw{height:320px;margin-top:40px;border-radius:0 0 0 96px}
+ .where .links{margin-top:28px}
+ footer{padding:24px 20px 96px}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);color:var(--stone)}
+ .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:"Bricolage Grotesque";font-weight:500}
+ .mbar a+a{border-left:1px solid #3a4143;color:#f1a48b}
+ .demo{top:auto;bottom:62px;right:10px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside>
+  <div class="who"><b>Dra. Amanda Borges</b><span>Cirurgiã-dentista</span><span class="cro">CRO-GO [número]</span></div>
+  <nav><a href="#como">Como funciona</a><a href="#tratamentos">Tratamentos</a><a href="#onde">Onde fica</a></nav>
+  <div class="mini">Urgência<a href="tel:+5562991750662">(62) 99175-0662</a></div>
+</aside>
+
+<main>
+<section class="first">
+  <p class="ask"><strong>Está com dor agora?</strong><span id="clock"></span>Ligue ou mande mensagem.</p>
+  <a class="num" href="tel:+5562991750662" aria-label="Ligar para (62) 99175-0662"><span class="dd">(62)</span><br class="m"> 99175<br>-0662</a>
+  <div class="breath" aria-hidden="true"></div>
+  <p class="how">Consultório na Av. 85, Setor Marista, Goiânia. [Horário de atendimento de urgência: preencher com a doutora]</p>
+  <div class="chips">
+    <a href="https://wa.me/5562991750662?text=Ol%C3%A1%2C%20Dra.%20Amanda.%20Estou%20com%20dor%20e%20preciso%20de%20atendimento.">Chamar no WhatsApp</a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+85,+1475,+Setor+Marista,+Goi%C3%A2nia">Como chegar</a>
+  </div>
+</section>
+
+<section class="seq" id="como">
+  <h2>O que acontece quando você chama</h2>
+  <ol>
+    <li>Você conta pelo WhatsApp ou por telefone o que está sentindo.</li>
+    <li>A doutora retorna com o horário possível para te atender.</li>
+    <li>Você vem ao consultório na Av. 85, Sala 01.</li>
+  </ol>
+</section>
+
+<section class="idx" id="tratamentos">
+  <h2>Tratamentos</h2>
+  <ul>
+    <li>Urgências odontológicas <span>Dor, dente quebrado, inchaço</span></li>
+    <li class="ph">[Tratamento] <span>[descrição curta]</span></li>
+    <li class="ph">[Tratamento] <span>[descrição curta]</span></li>
+    <li class="ph">[Tratamento] <span>[descrição curta]</span></li>
+  </ul>
+  <p class="legal">Cada caso é avaliado em consulta. Responsável: Dra. Amanda Borges, CRO-GO [número].</p>
+</section>
+
+<section class="where" id="onde">
+  <div class="addr">Av. 85, 1475, Sala 01<br>Setor Marista, Goiânia<small>Quadra 62, Lote 06. CEP 74160-010</small><div class="links"><a href="https://www.google.com/maps/dir/?api=1&destination=Av.+85,+1475,+Setor+Marista,+Goi%C3%A2nia">Abrir rota</a><a href="#">[Instagram]</a></div></div>
+  <div class="mapw"><iframe title="Mapa do consultório" src="https://www.google.com/maps?q=Av.+85,+1475,+Setor+Marista,+Goi%C3%A2nia+-+GO&hl=pt-BR&output=embed"></iframe></div>
+</section>
+
+<footer><span>Dra. Amanda Borges, cirurgiã-dentista, CRO-GO [número]</span><span>Av. 85, 1475, Setor Marista, Goiânia</span></footer>
+</main>
+</div>
+<nav class="mbar"><a href="tel:+5562991750662">Ligar agora</a><a href="https://wa.me/5562991750662?text=Ol%C3%A1%2C%20Dra.%20Amanda.%20Estou%20com%20dor%20e%20preciso%20de%20atendimento.">WhatsApp</a></nav>
+<div class="demo">Demonstração, não é o site oficial</div>
+<script>(function(){var c=document.getElementById("clock");function t(){var d=new Date();c.textContent="Agora são "+d.getHours()+"h"+String(d.getMinutes()).padStart(2,"0")+". ";}t();setInterval(t,30000);})();</script>
+</body>
+</html>

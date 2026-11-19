@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lottus Barbearia Clube · Jardim América, Goiânia</title>
+<meta name="description" content="Barbearia na Rua C-236, Jardim América, Goiânia. Corte, barba, cor, tratamentos e cuidados de mãos e pés.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0e0d0c;--brick:#9c6a3a;--amber:#e7b562;--night:#17213a;--bone:#ece6da;--dim:#8f877a;--rule:#2a2723}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--black);color:var(--bone);font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.mono{font-family:"Spline Sans Mono",monospace;font-size:14px;letter-spacing:.02em}
+.disp{font-family:"Big Shoulders Display",sans-serif;font-weight:900;line-height:.86;letter-spacing:-.01em}
+
+/* abertura */
+.door{position:relative;height:100svh;min-height:640px;overflow:hidden}
+.door img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;filter:saturate(.85) contrast(1.05);transform:scale(1.06);animation:settle 2.4s cubic-bezier(.2,.7,.1,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.door:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,12,.55) 0%,rgba(14,13,12,0) 30%,rgba(14,13,12,.15) 55%,rgba(14,13,12,.96) 100%)}
+.top{position:absolute;z-index:2;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:28px 40px}
+.top nav{display:flex;gap:32px}
+.top a.l{position:relative}
+.top a.l:after,.ul:after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1px;background:var(--amber);transition:right .25s ease-out}
+.top a.l:hover:after,.ul:hover:after{right:0}
+.door .name{position:absolute;z-index:2;left:32px;right:32px;bottom:28px}
+.door h1{font-size:clamp(88px,19vw,300px);text-transform:none}
+.door .line{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(236,230,218,.25)}
+.state{display:flex;align-items:center;gap:10px}
+.state i{width:8px;height:8px;border-radius:50%;background:var(--dim)}
+.state.on i{background:var(--amber);box-shadow:0 0 12px var(--amber)}
+
+/* manifesto */
+.intro{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:160px 40px 120px}
+.intro p.big{grid-column:2/10;font-size:clamp(28px,3.2vw,44px);line-height:1.2;font-weight:400}
+.intro p.big span{color:var(--amber)}
+.intro .side{grid-column:10/13;align-self:end;color:var(--dim)}
+
+/* tabela */
+.board{display:grid;grid-template-columns:5fr 7fr;gap:0;border-top:1px solid var(--rule)}
+.board .pic{position:relative;min-height:720px;overflow:hidden}
+.board .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:58% 62%;transform:scale(1.5);transform-origin:58% 62%}
+.board .pic figcaption{position:absolute;left:24px;bottom:20px;color:var(--bone);opacity:.8}
+.list{padding:96px 64px 96px 72px}
+.list h2{font-size:clamp(64px,7vw,112px);margin-bottom:56px}
+.row{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:16px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.row b{font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:34px;letter-spacing:.01em;line-height:1}
+.row .dots{border-bottom:1px dotted #4a453e;transform:translateY(-6px)}
+.row .p{color:var(--dim)}
+.row small{grid-column:1/4;color:var(--dim);font-size:16px;margin-top:6px}
+.row:hover b{color:var(--amber);transition:color .15s ease-out}
+.list .note{margin-top:32px;color:var(--dim)}
+
+/* horários */
+.hours{position:relative;padding:140px 40px 120px;background:var(--night);overflow:hidden}
+.hours .nums{display:flex;align-items:end;gap:3vw;font-size:clamp(150px,24vw,380px)}
+.hours .nums span.sep{color:var(--amber);font-weight:500}
+.hours .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:48px}
+.hours .grid div{grid-column:span 3}
+.hours .grid div:first-child{grid-column:1/5}
+.hours dt{color:var(--dim)}
+.hours dd{font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:36px}
+
+/* chegar */
+.come{display:grid;grid-template-columns:7fr 5fr;min-height:560px}
+.come iframe{width:100%;height:100%;min-height:480px;border:0;filter:grayscale(1) invert(.92) contrast(.85) sepia(.15)}
+.come .txt{padding:96px 48px;display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+.come h2{font-size:clamp(56px,6vw,96px)}
+.come address{font-style:normal;margin-top:24px;font-size:22px}
+.act{display:flex;flex-direction:column;gap:2px}
+.act a{display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--rule);font-family:"Spline Sans Mono",monospace;font-size:15px;transition:color .15s ease-out,padding .2s ease-out}
+.act a:hover{color:var(--amber);padding-left:8px}
+.act a.main{background:var(--amber);color:var(--black);padding:22px 20px;border:0;font-weight:500}
+.act a.main:hover{padding-left:28px;color:var(--black)}
+
+footer{position:relative;overflow:hidden;padding:64px 40px 0;border-top:1px solid var(--rule)}
+footer .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;color:var(--dim)}
+footer .giant{font-size:clamp(120px,26vw,420px);color:#1b1917;margin-top:24px;margin-bottom:-.18em;white-space:nowrap}
+.demo{position:fixed;z-index:30;right:16px;bottom:16px;background:rgba(14,13,12,.85);border:1px solid var(--rule);color:var(--dim);padding:6px 10px;font-family:"Spline Sans Mono",monospace;font-size:11px}
+
+@media(max-width:860px){
+ body{font-size:17px}
+ .top{padding:20px}.top nav a.l{display:none}
+ .door .name{left:20px;right:20px}
+ .door .line{flex-direction:column;align-items:start;gap:8px}
+ .intro{display:block;padding:96px 20px 72px}.intro .side{margin-top:32px}
+ .board{grid-template-columns:1fr}.board .pic{min-height:420px}
+ .list{padding:72px 20px}.row b{font-size:28px}
+ .hours{padding:96px 20px 80px}.hours .grid{display:block}.hours .grid div{margin-top:24px}
+ .come{grid-template-columns:1fr}.come .txt{padding:72px 20px;order:-1}.come iframe{min-height:340px}
+ footer{padding:48px 20px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="door">
+  <img src="img/fachada.jpg" alt="Fachada da Lottus Barbearia Clube à noite, casa preta com janelas acesas e placa iluminada">
+  <div class="top mono">
+    <span>Rua C-236, Jardim América</span>
+    <nav><a class="l" href="#tabela">Serviços</a><a class="l" href="#horario">Horário</a><a class="l" href="https://wa.me/5562998067721?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Lottus.">Agendar</a></nav>
+  </div>
+  <div class="name">
+    <h1 class="disp">Lottus</h1>
+    <div class="line mono">
+      <span>Barbearia Clube · Goiânia</span>
+      <span class="state" id="state"><i></i><span id="stateTxt">Seg a sex 9h às 21h, sáb 9h às 19h</span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="intro">
+  <p class="big">Corte, barba, cor e cuidado de <span>mãos e pés</span> na mesma casa. Para quem vem rápido e para quem fica a tarde.</p>
+  <p class="side">Do corte de todo dia ao platinado, para qualquer idade.</p>
+</section>
+
+<section class="board" id="tabela">
+  <figure class="pic"><img src="img/fachada.jpg" alt="Porta da Lottus com o poste de barbeiro e a placa iluminada"><figcaption class="mono">A porta da C-236</figcaption></figure>
+  <div class="list">
+    <h2 class="disp">Tabela da casa</h2>
+    <div class="row"><b>Corte</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Barba</b><span class="dots"></span><span class="p mono">consultar</span><small>Também terapia para a barba.</small></div>
+    <div class="row"><b>Tintura</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Descoloração e platinado</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Relaxamento</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Hidratação e massagem capilar</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Selagem progressiva</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Sobrancelha</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <div class="row"><b>Mãos e pés</b><span class="dots"></span><span class="p mono">consultar</span></div>
+    <p class="note mono">[Preços e tempo de cada serviço: preencher com a Lottus]</p>
+  </div>
+</section>
+
+<section class="hours" id="horario">
+  <div class="nums disp"><span>9</span><span class="sep">/</span><span>21</span></div>
+  <dl class="grid mono">
+    <div><dt>Segunda a sexta</dt><dd>9h às 21h</dd></div>
+    <div><dt>Sábado</dt><dd>9h às 19h</dd></div>
+    <div><dt>Domingo</dt><dd>Fechado</dd></div>
+  </dl>
+</section>
+
+<section class="come">
+  <iframe title="Mapa da Lottus Barbearia Clube" src="https://www.google.com/maps?q=Lottus+Barbearia+Clube,+C-236,+Jardim+Am%C3%A9rica,+Goi%C3%A2nia&hl=pt-BR&output=embed"></iframe>
+  <div class="txt">
+    <div>
+      <h2 class="disp">Casa preta, rua de tijolinho</h2>
+      <address>Rua C-236, Qd. 539, Lt. 5/6<br>Jardim América, Goiânia - GO<br>74290-130</address>
+    </div>
+    <div class="act">
+      <a class="main" href="https://wa.me/5562998067721?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Lottus."><span>Agendar no WhatsApp</span><span>→</span></a>
+      <a href="tel:+5562998067721"><span>(62) 99806-7721</span><span>Ligar</span></a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Lottus+Barbearia+Clube+Goi%C3%A2nia"><span>Rota no Google Maps</span><span>→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="meta mono">
+    <span>Lottus Barbearia Clube, Goiânia</span>
+    <span><a class="ul" style="position:relative" href="https://www.facebook.com/lottusbarbeariaoficial">Facebook</a> &nbsp; <a href="#">[Instagram]</a></span>
+  </div>
+  <div class="giant disp" aria-hidden="true">LOTTUS</div>
+</footer>
+<div class="demo">Demonstração, não é o site oficial</div>
+
+<script>
+(function(){var d=new Date(),day=d.getDay(),h=d.getHours()+d.getMinutes()/60,open=false,close='';
+if(day>=1&&day<=5&&h>=9&&h<21){open=true;close='21h'} if(day===6&&h>=9&&h<19){open=true;close='19h'}
+var s=document.getElementById('state'),t=document.getElementById('stateTxt');
+if(open){s.classList.add('on');t.textContent='Aberto agora, até '+close}else{t.textContent='Fechado agora. Seg a sex 9h às 21h, sáb 9h às 19h'}})();
+</script>
+</body>
+</html>
