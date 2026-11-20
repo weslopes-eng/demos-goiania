@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aura Spa Vila Mariana | Massagem, banho terapêutico e day spa em São Paulo</title>
+<meta name="description" content="Massagens de 60 a 180 minutos, banhos terapêuticos e programas de day spa individuais ou para casal na Rua Bagé, 281, Vila Mariana, São Paulo. Agende pelo WhatsApp ou presenteie com voucher.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Aura Spa, prazer em cuidar">
+<meta property="og:description" content="Massagens, banhos terapêuticos e day spa na Vila Mariana, São Paulo.">
+<meta property="og:image" content="img/banho.jpg">
+<meta name="theme-color" content="#f3eee5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DaySpa","name":"Aura Spa","slogan":"prazer em cuidar","telephone":"+55 11 93422-1020","email":"auraspacontato@gmail.com","url":"https://www.auraspa.com.br","address":{"@type":"PostalAddress","streetAddress":"Rua Bagé, 281","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"04012-140","addressCountry":"BR"},"priceRange":"R$ 260 a R$ 2.700"}
+</script>
+<style>
+:root{
+  --towel:#f3eee5; --linen:#e9e1d3; --ink:#2a2119; --ink2:#5a4a3c; --teak:#9a6a43; --teak2:#c49a6c;
+  --mint:#b9d3c3; --sage:#3f6b57; --sage2:#2f5243; --line:#d8cdbb;
+  --serif:"Gloock",Georgia,serif; --sans:"Hanken Grotesk",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--towel);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.05}
+h2{font-size:clamp(36px,5.4vw,72px)}
+h3{font-size:28px}
+.lead{font-size:clamp(18px,1.6vw,21px);color:var(--ink2);max-width:34em}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;border:1px solid var(--ink);transition:background .15s ease-out,color .15s ease-out}
+.btn.solid{background:var(--sage);border-color:var(--sage);color:#fff}
+.btn.solid:hover{background:var(--sage2)}
+.btn.ghost:hover{background:var(--ink);color:var(--towel)}
+.u{text-decoration:none;background:linear-gradient(var(--mint),var(--mint)) 0 100%/100% 6px no-repeat;transition:background-size .15s ease-out}
+.u:hover{background-size:100% 100%}
+
+/* demo strip */
+.demo{background:var(--ink);color:var(--linen);font-size:13px;text-align:center;padding:8px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(243,238,229,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.mark{font-family:var(--serif);font-size:30px;text-decoration:none;display:flex;align-items:baseline;gap:8px}
+.mark small{font-family:var(--sans);font-size:12px;color:var(--teak);letter-spacing:.04em}
+nav{display:flex;gap:28px;font-size:15px}
+nav a{text-decoration:none;color:var(--ink2)}
+nav a:hover{color:var(--ink)}
+header .btn{padding:10px 18px;font-size:14px}
+@media(max-width:900px){nav{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1.05fr;min-height:calc(100vh - 104px)}
+.hero-text{padding:64px 48px 48px max(24px,calc((100vw - 1240px)/2 + 24px));display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+.hero h1{font-size:clamp(52px,7.4vw,112px)}
+.hero h1 em{font-style:normal;color:var(--sage)}
+.hero .lead{margin-top:24px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-meta{display:flex;gap:32px;flex-wrap:wrap;font-size:14px;color:var(--ink2);border-top:1px solid var(--line);padding-top:24px}
+.hero-meta b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;color:var(--ink)}
+.hero-photo{position:relative;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.seal{position:absolute;left:-1px;bottom:48px;background:var(--towel);padding:16px 24px;border-radius:0 999px 999px 0;font-size:14px;color:var(--ink2);max-width:300px}
+.seal b{color:var(--ink);font-weight:600}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-photo{order:-1;height:46vh}
+  .hero-text{padding:32px 24px 40px}
+  .seal{bottom:16px}
+}
+
+/* ritual */
+section{padding:112px 0}
+.ritual-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:64px}
+@media(max-width:900px){.ritual-head{grid-template-columns:1fr;gap:16px;margin-bottom:40px} section{padding:72px 0}}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step figure{aspect-ratio:3/4;overflow:hidden;border-radius:4px}
+.step img{width:100%;height:100%;object-fit:cover}
+.step .t{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--ink);margin-top:16px;padding-top:12px}
+.step .t h3{font-size:24px}
+.step .t span{font-size:14px;color:var(--teak);font-variant-numeric:tabular-nums}
+.step p{font-size:15px;color:var(--ink2);margin-top:8px}
+.ruler{display:flex;height:12px;margin-top:48px;border-radius:999px;overflow:hidden}
+.ruler i{display:block}
+.ruler-legend{display:flex;justify-content:space-between;font-size:13px;color:var(--ink2);margin-top:8px;font-variant-numeric:tabular-nums}
+@media(max-width:900px){.timeline{grid-template-columns:repeat(4,72%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.step{scroll-snap-align:start}}
+
+/* massagens */
+.dark{background:var(--ink);color:var(--towel)}
+.dark .lead{color:#cbbfae}
+.mass{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.mass-photo{aspect-ratio:4/5;overflow:hidden;border-radius:4px}
+.mass-photo img{width:100%;height:100%;object-fit:cover}
+.dur{display:flex;gap:8px;margin:40px 0 24px;flex-wrap:wrap}
+.dur button{font:inherit;font-size:15px;background:none;color:var(--towel);border:1px solid #6b5a49;border-radius:999px;padding:10px 18px;cursor:pointer;font-variant-numeric:tabular-nums;transition:background .15s ease-out,color .15s ease-out}
+.dur button[aria-pressed=true]{background:var(--mint);color:var(--ink);border-color:var(--mint)}
+.price-out{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.price-out .name{font-family:var(--serif);font-size:36px}
+.price-out .val{font-size:22px;color:var(--mint);font-variant-numeric:tabular-nums}
+.price-out p{flex-basis:100%;color:#cbbfae;font-size:16px}
+.tech{margin-top:24px;font-size:15px;color:#cbbfae}
+.tech b{color:var(--towel);font-weight:500}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#4a3d31;margin-top:64px;border:1px solid #4a3d31}
+.mini>div{background:var(--ink);padding:32px 24px}
+.mini h3{font-size:26px}
+.mini .p{color:var(--mint);font-variant-numeric:tabular-nums;margin:8px 0 12px}
+.mini p{font-size:15px;color:#cbbfae}
+@media(max-width:900px){.mass{grid-template-columns:1fr;gap:40px}.mini{grid-template-columns:1fr;margin-top:56px}}
+
+/* dayspa */
+.ds-top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.toggle{display:inline-flex;border:1px solid var(--ink);border-radius:999px;padding:4px}
+.toggle button{font:inherit;font-size:15px;border:0;background:none;padding:8px 18px;border-radius:999px;cursor:pointer}
+.toggle button[aria-pressed=true]{background:var(--ink);color:var(--towel)}
+.prog{display:grid;grid-template-columns:200px 1fr 140px;gap:32px;align-items:center;padding:24px 0;border-top:1px solid var(--line)}
+.prog:last-of-type{border-bottom:1px solid var(--line)}
+.prog h3{font-size:30px}
+.prog .min{font-size:14px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.bar{display:flex;height:28px;border-radius:4px;overflow:hidden;background:var(--linen)}
+.bar span{display:flex;align-items:center;padding:0 8px;font-size:12px;white-space:nowrap;overflow:hidden}
+.b-banho{background:var(--mint);color:var(--sage2)}
+.b-mass{background:var(--teak);color:#fff}
+.b-rec{background:var(--teak2);color:var(--ink)}
+.prog .inc{font-size:14px;color:var(--ink2);margin-top:8px}
+.prog .pr{font-family:var(--serif);font-size:28px;text-align:right;font-variant-numeric:tabular-nums}
+.prog .pr a{display:block;font-family:var(--sans);font-size:14px;margin-top:4px}
+.key{display:flex;gap:24px;font-size:14px;color:var(--ink2);margin-top:16px;flex-wrap:wrap}
+.key i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:8px;vertical-align:-1px}
+@media(max-width:900px){.prog{grid-template-columns:1fr auto;gap:12px}.prog .barcol{grid-column:1/-1;grid-row:2}}
+
+/* presente */
+.gift{display:grid;grid-template-columns:1fr 1fr;min-height:720px;background:var(--mint)}
+.gift-photo{overflow:hidden}
+.gift-photo img{width:100%;height:100%;object-fit:cover}
+.gift-text{padding:96px 64px;display:flex;flex-direction:column;justify-content:center}
+.gift-text .lead{color:var(--sage2)}
+.gift ol{list-style:none;padding:0;margin:40px 0;counter-reset:g}
+.gift li{counter-increment:g;display:grid;grid-template-columns:40px 1fr;padding:16px 0;border-top:1px solid rgba(47,82,67,.25);font-size:16px}
+.gift li::before{content:counter(g);font-family:var(--serif);font-size:24px;color:var(--sage)}
+.gift .note{font-size:14px;color:var(--sage2);margin-top:24px}
+@media(max-width:900px){.gift{grid-template-columns:1fr}.gift-photo{height:56vh}.gift-text{padding:56px 24px}}
+
+/* booking demo */
+.bk-head{max-width:760px;margin-bottom:48px}
+.tag{display:inline-block;font-size:13px;background:var(--ink);color:var(--towel);padding:4px 12px;border-radius:999px;margin-bottom:16px}
+.bk{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:32px}
+.field{margin-bottom:24px}
+.field>label,.field>.lbl{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+select{width:100%;font:inherit;padding:12px;border:1px solid var(--line);border-radius:4px;background:var(--towel)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--towel);border-radius:4px;padding:8px 12px;cursor:pointer;font-variant-numeric:tabular-nums}
+.chips button[aria-pressed=true]{background:var(--sage);border-color:var(--sage);color:#fff}
+.chips button:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.sum{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--line);padding-top:24px;flex-wrap:wrap}
+.sum b{font-family:var(--serif);font-weight:400;font-size:28px}
+.sum small{display:block;color:var(--ink2);font-size:13px}
+.done{display:none;background:var(--mint);border-radius:4px;padding:16px;margin-top:16px;font-size:15px;color:var(--sage2)}
+.phone{background:var(--ink);border-radius:32px;padding:12px;max-width:360px;margin:0 auto}
+.screen{background:#ece5dc;border-radius:22px;overflow:hidden}
+.chat-top{background:var(--sage2);color:#fff;padding:14px 16px;font-size:15px}
+.chat-top small{display:block;opacity:.75;font-size:12px}
+.chat{padding:16px 12px;display:flex;flex-direction:column;gap:8px;min-height:420px;font-size:14px}
+.msg{max-width:84%;padding:8px 12px;border-radius:8px;line-height:1.4}
+.in{background:#fff;align-self:flex-start}
+.out{background:#d8ecdc;align-self:flex-end}
+.pix{font-family:ui-monospace,monospace;font-size:12px;background:var(--towel);padding:6px;border-radius:4px;margin-top:6px;word-break:break-all}
+@media(max-width:900px){.bk{grid-template-columns:1fr}.panel{padding:24px}}
+
+/* espaço */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:120px;gap:12px;margin-top:48px}
+.gal figure{position:relative;overflow:hidden;border-radius:4px}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figcaption{position:absolute;left:12px;bottom:12px;background:var(--towel);font-size:13px;padding:4px 10px;border-radius:999px}
+.g1{grid-column:1/6;grid-row:span 4}.g2{grid-column:6/10;grid-row:span 2}.g3{grid-column:10/13;grid-row:span 3}.g4{grid-column:6/10;grid-row:span 2}.g5{grid-column:10/13;grid-row:span 3}.g6{grid-column:1/4;grid-row:span 2}.g7{grid-column:4/10;grid-row:span 2}
+@media(max-width:900px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:160px}.gal figure{grid-column:auto!important;grid-row:span 1!important}.g1,.g7{grid-column:1/-1!important;grid-row:span 2!important}}
+
+/* reviews */
+.rv{display:grid;grid-template-columns:1fr 2fr;gap:64px}
+.score{font-family:var(--serif);font-size:120px;line-height:1}
+.score-sub{color:var(--ink2);font-size:16px;margin-top:8px}
+.quotes{display:grid;gap:0}
+blockquote{font-family:var(--serif);font-size:clamp(22px,2.2vw,30px);line-height:1.25;padding:32px 0;border-top:1px solid var(--line)}
+blockquote cite{display:block;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--ink2);margin-top:12px}
+.fine{font-size:13px;color:var(--ink2);margin-top:16px}
+@media(max-width:900px){.rv{grid-template-columns:1fr;gap:24px}.score{font-size:88px}}
+
+/* local */
+.loc{display:grid;grid-template-columns:1fr 1.3fr;gap:0;background:var(--ink);color:var(--towel)}
+.loc-text{padding:96px 64px}
+.loc dl{margin-top:40px;display:grid;gap:24px}
+.loc dt{font-size:13px;color:#cbbfae}
+.loc dd{font-size:19px;margin-top:4px}
+.loc iframe{background:#3a2e24;width:100%;height:100%;min-height:560px;border:0;filter:grayscale(.4) sepia(.2)}
+@media(max-width:900px){.loc{grid-template-columns:1fr}.loc-text{padding:64px 24px}.loc iframe{min-height:360px}}
+
+footer{padding:48px 0 120px;font-size:14px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.big{font-family:var(--serif);font-size:clamp(96px,22vw,320px);line-height:.8;color:var(--linen);text-align:center;overflow:hidden;padding-top:48px}
+
+/* mobile bar */
+.mbar{display:none}
+@media(max-width:900px){
+  .mbar{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}
+  .mbar a{padding:14px;font-size:15px;justify-content:center}
+  .mbar .ghost{background:var(--towel)}
+  header .btn{display:none}
+}
+</style>
+</head>
+<body>
+<div class="demo">Demonstração de redesenho, não é o site oficial do Aura Spa</div>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#">Aura <small>spa · prazer em cuidar</small></a>
+    <nav>
+      <a href="#massagens">Massagens</a>
+      <a href="#dayspa">Day spa</a>
+      <a href="#presentear">Presentear</a>
+      <a href="#espaco">O espaço</a>
+      <a href="#chegar">Como chegar</a>
+    </nav>
+    <a class="btn solid" href="https://wa.me/5511934221020?text=Ol%C3%A1!%20Quero%20agendar%20no%20Aura%20Spa." target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="hero-text">
+    <div>
+      <h1>Prazer em cuidar, na <em>Vila Mariana</em>.</h1>
+      <p class="lead">Massagens de 60 a 180 minutos, banhos terapêuticos e day spa para uma pessoa ou para o casal. Você chega, toma um chá e o resto do tempo é seu.</p>
+      <div class="ctas">
+        <a class="btn solid" href="https://wa.me/5511934221020?text=Ol%C3%A1!%20Quero%20agendar%20no%20Aura%20Spa." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="btn ghost" href="#presentear">Dar de presente</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div><b>5,0</b>Tripadvisor, 682 avaliações</div>
+      <div><b>2021–2025</b>Travellers' Choice</div>
+      <div><b>Rua Bagé, 281</b>Vila Mariana, São Paulo</div>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="img/banho.jpg" alt="Sala de banho do Aura Spa com banheira, revestimento de madeira e plantas" fetchpriority="high">
+    <div class="seal"><b>Banho terapêutico</b> com cromoterapia e óleo essencial escolhido para você</div>
+  </div>
+</section>
+
+<section id="ritual">
+  <div class="wrap">
+    <div class="ritual-head">
+      <h2>Duas horas de Day Spa Clássica</h2>
+      <p class="lead">Do chá de boas-vindas à água de coco do fim, é assim que o programa acontece.</p>
+    </div>
+    <div class="timeline">
+      <div class="step"><figure><img src="img/recepcao.jpg" alt="Recepção do Aura Spa" loading="lazy"></figure>
+        <div class="t"><h3>Chegada</h3><span>recepção</span></div>
+        <p>Ambiente climatizado, chás Twinings e Nespresso.</p></div>
+      <div class="step"><figure><img src="img/hidro.jpg" alt="Banheira de hidromassagem iluminada em azul" loading="lazy"></figure>
+        <div class="t"><h3>Banho</h3><span>30 min</span></div>
+        <p>Banho terapêutico com cromoterapia e aromaterapia com óleos essenciais.</p></div>
+      <div class="step"><figure><img src="img/sala.jpg" alt="Sala de massagem com maca e parede de madeira" loading="lazy"></figure>
+        <div class="t"><h3>Massagem</h3><span>90 min</span></div>
+        <p>Técnica clássica à sua escolha, ou duas combinadas.</p></div>
+      <div class="step"><figure><img src="img/bandeja.jpg" alt="Bandeja com frutas secas e chá" loading="lazy"></figure>
+        <div class="t"><h3>Depois</h3><span>sem pressa</span></div>
+        <p>Água de coco e mix de frutas secas.</p></div>
+    </div>
+    <div class="ruler" aria-hidden="true"><i style="flex:30;background:var(--mint)"></i><i style="flex:90;background:var(--teak)"></i></div>
+    <div class="ruler-legend"><span>0</span><span>30 min de banho</span><span>120 min</span></div>
+  </div>
+</section>
+
+<section id="massagens" class="dark">
+  <div class="wrap">
+    <div class="mass">
+      <div>
+        <h2>Massagem no seu tempo</h2>
+        <p class="lead" style="margin-top:24px">Escolha a duração. A recepção com chá e Nespresso está sempre incluída.</p>
+        <div class="dur" role="group" aria-label="Duração da massagem">
+          <button aria-pressed="true" data-i="0">60 min</button><button aria-pressed="false" data-i="1">90 min</button><button aria-pressed="false" data-i="2">120 min</button><button aria-pressed="false" data-i="3">150 min</button><button aria-pressed="false" data-i="4">180 min</button>
+        </div>
+        <div class="price-out" aria-live="polite">
+          <span class="name" id="m-name">Massagem 1h</span><span class="val" id="m-val">R$ 270</span>
+          <p id="m-desc">Uma pausa que faz toda a diferença.</p>
+        </div>
+        <p class="tech"><b>Técnicas:</b> <span id="m-tech">Shiatsu, Sueca, Aura, Drenagem, Deep Tissue ou Pedras Quentes</span></p>
+        <a class="btn solid" style="margin-top:32px" id="m-cta" href="#" target="_blank" rel="noopener">Agendar esta massagem</a>
+      </div>
+      <div class="mass-photo"><img src="img/pedrasquentes.jpg" alt="Terapeuta posicionando pedras quentes nas costas" loading="lazy"></div>
+    </div>
+    <div class="mini">
+      <div><h3>Candle Massage</h3><div class="p">60 min · R$ 340</div><p>Óleo aquecido de vela aromática, que une aromaterapia e calor.</p></div>
+      <div><h3>Para gestantes</h3><div class="p">Aura Peace 1h30 · R$ 560<br>Aura Serenity 2h · R$ 770</div><p>Colchão específico, spa dos pés ou banho de imersão, espumante sem álcool e chocolates Kopenhagen.</p></div>
+      <div><h3>Banho Aura</h3><div class="p">30 min · R$ 260<br>45 min · R$ 520</div><p>Banho termal com cromoterapia, para até 2 pessoas (valor por pessoa). Ideal antes da massagem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="dayspa">
+  <div class="wrap">
+    <div class="ds-top">
+      <div>
+        <h2>Day spa</h2>
+        <p class="lead" style="margin-top:16px">Banho terapêutico e massagem no mesmo programa. A barra mostra como o tempo se divide.</p>
+      </div>
+      <div class="toggle" role="group" aria-label="Para quantas pessoas">
+        <button aria-pressed="true" data-mult="1">Individual</button><button aria-pressed="false" data-mult="2">Casal</button>
+      </div>
+    </div>
+    <div id="progs"></div>
+    <div class="key"><span><i style="background:var(--mint)"></i>banho terapêutico</span><span><i style="background:var(--teak)"></i>massagem</span><span><i style="background:var(--teak2)"></i>recepção e cortesias</span></div>
+  </div>
+</section>
+
+<section id="presentear" class="gift" style="padding:0">
+  <div class="gift-photo"><img src="img/voucher.jpg" alt="Envelope verde do voucher Aura Luxury com lacre e flores" loading="lazy"></div>
+  <div class="gift-text">
+    <h2>Um presente que se abre devagar</h2>
+    <p class="lead" style="margin-top:24px">Qualquer massagem ou programa de day spa vira voucher virtual, para aniversário, casamento ou para a equipe da sua empresa.</p>
+    <ol>
+      <li>Escolha a experiência e para quem é.</li>
+      <li>Pague pelo WhatsApp com PIX ou transferência, sem taxas e com desconto, ou compre online.</li>
+      <li>Receba o voucher virtual para entregar.</li>
+    </ol>
+    <div><a class="btn solid" href="https://wa.me/5511934221020?text=Ol%C3%A1!%20Quero%20presentear%20com%20um%20voucher%20do%20Aura%20Spa." target="_blank" rel="noopener">Comprar voucher no WhatsApp</a></div>
+    <p class="note">Cancelamentos sem aviso de 24h consideram o voucher utilizado.</p>
+  </div>
+</section>
+
+<section id="agendar">
+  <div class="wrap">
+    <div class="bk-head">
+      <span class="tag">Demonstração</span>
+      <h2>Agendar e pagar sem esperar resposta</h2>
+      <p class="lead" style="margin-top:16px">Um assistente pode mostrar os horários livres, receber o PIX e confirmar a reserva na hora, a qualquer hora do dia. Experimente: nada aqui é reservado de verdade.</p>
+    </div>
+    <div class="bk">
+      <div class="panel">
+        <div class="field"><label for="b-exp">Experiência</label><select id="b-exp"></select></div>
+        <div class="field"><span class="lbl">Dia</span><div class="chips" id="b-days"></div></div>
+        <div class="field"><span class="lbl">Horário</span><div class="chips" id="b-times"></div></div>
+        <div class="field"><span class="lbl">Pagamento</span><div class="chips" id="b-pay"><button aria-pressed="true">PIX</button><button aria-pressed="false">Cartão</button></div></div>
+        <div class="sum"><div><small>Total</small><b id="b-total">R$ 640</b></div><button class="btn solid" id="b-go" style="cursor:pointer">Confirmar reserva</button></div>
+        <div class="done" id="b-done"></div>
+      </div>
+      <div class="phone" aria-label="Exemplo de conversa com o assistente">
+        <div class="screen">
+          <div class="chat-top">Aura Spa<small>assistente de agendamento</small></div>
+          <div class="chat" id="chat"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="espaco" style="padding-top:0">
+  <div class="wrap">
+    <h2>O espaço</h2>
+    <p class="lead" style="margin-top:16px">Uma casa na Rua Bagé com jardim vertical, caminho de pedras, salas individuais e para casal.</p>
+    <div class="gal">
+      <figure class="g1"><img src="img/jardim.jpg" alt="Jardim vertical iluminado" loading="lazy"><figcaption>Jardim</figcaption></figure>
+      <figure class="g2"><img src="img/casal.jpg" alt="Sala com duas macas para casal" loading="lazy"><figcaption>Sala para casal</figcaption></figure>
+      <figure class="g3"><img src="img/pedras.jpg" alt="Corredor com caminho de pedras brancas" loading="lazy"></figure>
+      <figure class="g4"><img src="img/frascos.jpg" alt="Frascos de óleo em nicho de madeira" loading="lazy"></figure>
+      <figure class="g5"><img src="img/fachada.jpg" alt="Fachada do Aura Spa" loading="lazy"><figcaption>Rua Bagé, 281</figcaption></figure>
+      <figure class="g6"><img src="img/toalha.jpg" alt="Toalha enrolada com ramo de alecrim" loading="lazy"></figure>
+      <figure class="g7"><img src="img/massagem.jpg" alt="Sessão de massagem nas costas" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" style="padding-top:0">
+  <div class="wrap rv">
+    <div>
+      <div class="score">5,0</div>
+      <p class="score-sub">no Tripadvisor, com 682 avaliações. Travellers' Choice de 2021 a 2025 e citado pela myBest Brasil entre os spas de São Paulo.</p>
+    </div>
+    <div class="quotes">
+      <blockquote>“Foi um day spa, com banho e massagem de 90 minutos. Tudo incrível: atendimento, clima, ambiente e principalmente a qualidade da massagem.”<cite>Camilla C., setembro de 2026</cite></blockquote>
+      <blockquote>“Ganhamos de presente das nossas filhas, genro e netas pelas Bodas de Ouro. Atendimento excelente da recepção às profissionais.”<cite>Celina T., agosto de 2026</cite></blockquote>
+      <blockquote>“Qualidade impecável e preço justo.”<cite>Aline G.</cite></blockquote>
+      <p class="fine">Trechos de avaliações públicas do Tripadvisor, em tradução livre. <a class="u" href="https://www.tripadvisor.com.br/Attraction_Review-g303631-d20314321-Reviews-Aura_Spa-Sao_Paulo_State_of_Sao_Paulo.html" target="_blank" rel="noopener">Ler todas</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="chegar" class="loc" style="padding:0">
+  <div class="loc-text">
+    <h2>Como chegar</h2>
+    <dl>
+      <div><dt>Endereço</dt><dd>Rua Bagé, 281, Vila Mariana<br>São Paulo, SP, 04012-140</dd></div>
+      <div><dt>Estacionamento</dt><dd>O mais próximo fica na Rua Bagé, 89</dd></div>
+      <div><dt>Horário</dt><dd>Terça a sexta, 10h às 20h<br>Sábado, 9h às 19h</dd></div>
+      <div><dt>Contato</dt><dd><a class="u" href="https://wa.me/5511934221020" target="_blank" rel="noopener">(11) 93422-1020</a><br><a class="u" href="mailto:auraspacontato@gmail.com">auraspacontato@gmail.com</a><br><a class="u" href="https://www.instagram.com/_aura_spa_/" target="_blank" rel="noopener">@_aura_spa_</a></dd></div>
+    </dl>
+    <a class="btn solid" style="margin-top:40px" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Bag%C3%A9,+281,+Vila+Mariana,+S%C3%A3o+Paulo" target="_blank" rel="noopener">Traçar rota</a>
+  </div>
+  <iframe title="Mapa do Aura Spa" loading="lazy" src="https://www.google.com/maps?q=Aura+Spa,+Rua+Bag%C3%A9,+281,+Vila+Mariana,+S%C3%A3o+Paulo+-+SP&hl=pt-BR&output=embed"></iframe>
+</section>
+</main>
+
+<div class="big" aria-hidden="true">Aura</div>
+<footer>
+  <div class="wrap">
+    <span>Espaço Aura Terapias Integrativas Ltda · CNPJ 39.316.597/0001-13</span>
+    <span>Demonstração preparada por Wesley Lopes</span>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn solid" href="https://wa.me/5511934221020?text=Ol%C3%A1!%20Quero%20agendar%20no%20Aura%20Spa." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+  <a class="btn ghost" href="#presentear">Presentear</a>
+</div>
+
+<script>
+const WA='https://wa.me/5511934221020?text=';
+const brl=v=>'R$ '+v.toLocaleString('pt-BR');
+// massagens
+const M=[
+ {n:'Massagem 1h',p:270,d:'Uma pausa que faz toda a diferença.',t:'Shiatsu, Sueca, Aura, Drenagem, Deep Tissue ou Pedras Quentes'},
+ {n:"Aura Touch 90'",p:410,d:'Uma hora e meia que faz diferença no dia a dia.',t:'Shiatsu, Sueca, Drenagem, Deep Tissue, Pedras Quentes ou Reflexologia'},
+ {n:"Aura Touch 120'",p:540,d:'Duas horas para renovar as energias.',t:'Shiatsu, Sueca, Drenagem, Deep Tissue, Pedras Quentes ou Reflexologia'},
+ {n:"Aura Touch 150'",p:680,d:'Duas horas e meia para o corpo e a cabeça.',t:'Shiatsu, Sueca, Drenagem, Deep Tissue, Pedras Quentes ou Reflexologia'},
+ {n:"Aura Touch 180'",p:810,d:'Três horas para quebrar a rotina de verdade.',t:'Shiatsu, Sueca, Drenagem, Deep Tissue, Pedras Quentes ou Reflexologia'}];
+const setM=i=>{const m=M[i];document.getElementById('m-name').textContent=m.n;document.getElementById('m-val').textContent=brl(m.p);document.getElementById('m-desc').textContent=m.d;document.getElementById('m-tech').textContent=m.t;
+ document.getElementById('m-cta').href=WA+encodeURIComponent('Olá! Quero agendar a '+m.n+' no Aura Spa.');
+ document.querySelectorAll('.dur button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.i==i));};
+document.querySelectorAll('.dur button').forEach(b=>b.onclick=()=>setM(+b.dataset.i)); setM(0);
+// day spa
+const P=[
+ {n:'Clássica',tot:120,b:30,m:90,p:640,inc:'Água de coco e mix de frutas secas'},
+ {n:'Emotion',tot:160,b:30,m:120,p:860,inc:'Água de coco e frutas secas. Pode combinar 2 técnicas'},
+ {n:'Premium',tot:145,b:45,m:90,p:930,inc:'Enxoval e kit Trousseau, frutas, mini espumante, Kopenhagen'},
+ {n:'Prestige',tot:175,b:45,m:120,p:1070,inc:'Enxoval e kit Trousseau, frutas, mini espumante, Kopenhagen'},
+ {n:'Platinum',tot:205,b:45,m:150,p:1200,inc:'Enxoval e kit Trousseau, frutas, mini espumante, Kopenhagen'},
+ {n:'Exclusive',tot:235,b:45,m:180,p:1350,inc:'Enxoval e kit Trousseau, frutas, mini espumante, Kopenhagen'}];
+let mult=1;const MAX=235;
+function drawP(){document.getElementById('progs').innerHTML=P.map(x=>{const r=x.tot-x.b-x.m;const who=mult==2?' (casal)':'';
+ return `<div class="prog"><div><h3>${x.n}</h3><div class="min">${x.tot} min</div></div>
+ <div class="barcol"><div class="bar" style="width:${x.tot/MAX*100}%"><span class="b-banho" style="flex:${x.b}">${x.b}'</span><span class="b-mass" style="flex:${x.m}">massagem ${x.m}'</span>${r>0?`<span class="b-rec" style="flex:${r}"></span>`:''}</div><div class="inc">${x.inc}</div></div>
+ <div class="pr">${brl(x.p*mult)}<a class="u" target="_blank" rel="noopener" href="${WA+encodeURIComponent('Olá! Quero agendar o Day-Spa Aura '+x.n+who+'.')}">Agendar</a></div></div>`}).join('');}
+document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>{mult=+b.dataset.mult;document.querySelectorAll('.toggle button').forEach(c=>c.setAttribute('aria-pressed',c===b));drawP();});
+drawP();
+// booking demo
+const EXP=[['Day-Spa Aura Clássica',640],['Day-Spa Aura Clássica (casal)',1280],['Massagem 1h',270],["Aura Touch 90'",410],['Candle Massage',340],['Aura Peace (gestantes)',560],['Day-Spa Aura Premium',930]];
+const sel=document.getElementById('b-exp');sel.innerHTML=EXP.map((e,i)=>`<option value="${i}">${e[0]} · ${brl(e[1])}</option>`).join('');
+const dn=['dom','seg','ter','qua','qui','sex','sáb'];const days=[];let d=new Date();
+while(days.length<6){d.setDate(d.getDate()+1);if(d.getDay()!==0&&d.getDay()!==1)days.push(new Date(d));}
+const st={exp:0,day:0,time:null,pay:'PIX'};
+function pick(box,btn){box.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b===btn));}
+const dBox=document.getElementById('b-days');days.forEach((x,i)=>{const b=document.createElement('button');b.textContent=dn[x.getDay()]+' '+x.getDate()+'/'+(x.getMonth()+1);b.setAttribute('aria-pressed',i===0);b.onclick=()=>{st.day=i;pick(dBox,b);drawT();chat();};dBox.appendChild(b);});
+const tBox=document.getElementById('b-times');
+function drawT(){const sat=days[st.day].getDay()===6;const hrs=sat?['09:00','10:30','13:00','14:30','16:00']:['10:00','11:30','14:00','15:30','17:00','18:30'];
+ tBox.innerHTML='';st.time=null;hrs.forEach((h,i)=>{const b=document.createElement('button');b.textContent=h;b.setAttribute('aria-pressed','false');if((i*7+st.day*3)%5===1)b.disabled=true;b.onclick=()=>{st.time=h;pick(tBox,b);chat();};tBox.appendChild(b);});}
+drawT();
+const pBox=document.getElementById('b-pay');pBox.querySelectorAll('button').forEach(b=>b.onclick=()=>{st.pay=b.textContent;pick(pBox,b);chat();});
+sel.onchange=()=>{st.exp=+sel.value;document.getElementById('b-total').textContent=brl(EXP[st.exp][1]);chat();};
+const chatEl=document.getElementById('chat');
+function chat(final){const e=EXP[st.exp],x=days[st.day];const dia=dn[x.getDay()]+' '+x.getDate()+'/'+(x.getMonth()+1);
+ let h=`<div class="msg out">Oi! Queria agendar ${e[0]}.</div><div class="msg in">Oi! Que bom. Tenho estes horários em ${dia}: ${[...tBox.querySelectorAll('button:not(:disabled)')].map(b=>b.textContent).join(', ')}. Qual prefere?</div>`;
+ if(st.time)h+=`<div class="msg out">${st.time}</div><div class="msg in">Reservei ${dia} às ${st.time} por 10 minutos. Total ${brl(e[1])}. ${st.pay==='PIX'?'Segue o PIX copia e cola:<div class="pix">00020126…aura-demo…6304ABCD</div>':'Segue o link de pagamento com cartão.'}</div>`;
+ if(final)h+=`<div class="msg out">Paguei!</div><div class="msg in">Pagamento recebido. Sua reserva está confirmada, te espero na Rua Bagé, 281. Cancelamentos com até 24h de antecedência.</div>`;
+ chatEl.innerHTML=h;}
+chat();
+document.getElementById('b-go').onclick=()=>{const o=document.getElementById('b-done');
+ if(!st.time){o.style.display='block';o.textContent='Escolha um horário para continuar.';return;}
+ o.style.display='block';o.textContent='Reserva de demonstração confirmada. No site real, o horário sairia da agenda do spa e a confirmação chegaria no WhatsApp da cliente.';chat(true);};
+</script>
+</body>
+</html>
