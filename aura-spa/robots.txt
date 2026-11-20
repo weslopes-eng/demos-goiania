@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.auraspa.com.br/sitemap.xml
